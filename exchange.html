@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+	<link rel="stylesheet" type="text/css" href="css/exchange.css">
+</head>
+<body>
+<header class="header">
+	<div class="header-top">
+		<div class="container">
+			<span class="header-top1">最新成交价：<b>6.1024</b>小时成交币量：<b>3226727.0924</b>小时成交金额量：<b>5849</b></span>
+			<span><a href="">立即登录</a><a href="">免费注册</a></span>
+		</div>
+	</div>
+	<div class="header-middle">
+		<div class="container fix">
+			<div class="logo-bg">
+				<img src="images/logo.png" alt="" class="logo">
+			</div>
+			<img src="images/mu.png" alt="" id="mu">
+			<ul id="titles">
+				<a href="index.html"><li>首页</li></a>
+				<a href="exchange.html"><li>交易大厅</li></a>
+				<a href="count-1.html"><li>我的账户</li></a>
+				<a href="show.html"><li>网站公告</li></a>
+				<a href="show.html"><li style="border-right: none;">一般问题</li></a>
+			</ul>
+		</div>
+	</div>
+</header>
+<!-- <div class="count-title">
+	<div class="container">
+		<ul>
+			<li><a href="">买入|卖出</a><i></i></li>
+	        <li><a href="">我的委托</a><i></i></li>
+	        <li><a href="">我的交易</a><i></i></li>
+	        <li><a href="">全站交易</a><i></i></li>
+		</ul>
+	</div>
+</div> -->
+<div class="count-con" style="margin-top: 30px;">
+	<div class="container">
+		<div class="main-main">
+			<ul id="ul">
+			    <li id="li1" onclick="click1(this);">交易市场</li>
+			    <li id="li2" onclick="click1(this);">最新成交记录</li>
+			    <li id="li3" onclick="click1(this);">我的委托</li>
+			    <li id="li4" onclick="click1(this);">我的交易</li>
+			</ul>
+			<div class="main">
+				<div class="ex1 fix">
+					<ul id="ul1">
+					    <li id="li11" onclick="click2(this);">猛犸象牙(XY)/RMB <p>6.10</p></li>
+					    <li id="li12" onclick="click2(this);">琥珀(HP)/RMB <p>12.00</p></li>
+					    <li id="li13" onclick="click2(this);">琥珀(HP)/RMB <p>12.00</p></li>
+					    <li id="li14" onclick="click2(this);">琥珀(HP)/RMB <p>6.10</p></li>
+					</ul>
+					<div class="ex2">
+						<div class="index2">
+							<table>
+								<tr>
+									<td style="background: #aaa;color: #fff;width: 21%;"><p>猛犸象牙(XY)</p><p>实时行情</p></td>
+									<td style="width: 40%;position: relative;"><img src="images/arrow-1.png" alt=""><p style="margin-top: 5px;">2017-09-04</p><span class="num">6.10</span></td>
+									<td style="width: 12%;"><p>最低价</p><b style="color: #65a509;">5.00</b></td>
+									<td style="width: 12%;"><p>最高价</p><b style="color: #ff0d00;">6.3</b></td>
+									<td style="width: 15%;"><p>成交量</p><b>3218.91</b></td>
+								</tr>
+							</table>
+							<div id="index2-tu"></div>
+							<div class="index3">
+								<div class="index3-top">
+									<div style="border-bottom: 2px solid #f9d423;width: 120px;padding-bottom: 5px;"><img src="images/thead.png" alt=""><span>实时成交</span></div>
+								</div>
+								<table>
+									<tr>
+										<td>时间</td>
+										<td>类型</td>
+										<td>成交价</td>
+										<td>成交量</td>
+									</tr>
+									<tr>
+										<td>没有找到数据</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="exchange">
+							<div class="row">
+								<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 hei1">
+									<div class="exchange-1">
+										<h4 style="text-align: center;font-weight: bolder;margin-bottom:22px;">买入</h4>
+										<form class="form-horizontal" role="form" action="" style="width: 90%;margin: 0 auto;">
+											<div class="form-group">
+												<label for="firstname" class="col-sm-2 col-md-4 control-label">买入价</label>
+												<div class="col-sm-10 col-md-8">
+													<input type="text" class="form-control" id="firstname" 
+														   placeholder="">
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="lastname" class="col-sm-2 col-md-4 control-label">购买数量</label>
+												<div class="col-sm-10 col-md-8">
+													<input type="text" class="form-control" id="lastname" 
+														   placeholder="">
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="lastname" class="col-sm-2 col-md-4 control-label">总额</label>
+												<div class="col-sm-10 col-md-8">
+													<input type="text" class="form-control" id="lastname" 
+														   placeholder="">
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="lastname" class="col-sm-2 col-md-4 control-label">交易密码</label>
+												<div class="col-sm-10 col-md-8">
+													<input type="text" class="form-control" id="lastname" 
+														   placeholder="">
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="col-sm-offset-3 col-sm-9">
+													<button type="submit" class="btn btn-default btn1">买入</button>
+												</div>
+											</div>
+										</form>
+										<p class="p1">收取<span class="span1">0.2</span>元手续费</p>
+										<p class="p1">建议价格<span class="span1">6.30</span>RMB</p>
+										<p class="p1">最多可购买<span class="span1">12332555.22</span>猛犸象牙</p>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 hei2" style="padding-left: 0;padding-right: 0;height: 100%;">
+									<div class="index33">
+										<div class="index3-top">
+											<div style="border-bottom: 2px solid #f9d423;width: 120px;padding-bottom: 5px;"><img src="images/thead.png" alt=""><span>买卖委托盘</span></div>
+										</div>
+										<table class="table1">
+											<tr>
+												<td>类型</td>
+												<td>价格(￥)</td>
+												<td>数量(B)</td>
+											</tr>
+											<tr>
+												<td class="red">没有找到数据</td>
+												<td></td>
+												<td></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="exchange">
+							<div class="row">
+								<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 hei1">
+									<div class="exchange-1" style="border-top-color: #6aa30e;" >
+										<h4 style="text-align: center;font-weight: bolder;margin-bottom:22px;">卖出</h4>
+										<form class="form-horizontal" role="form" action="" style="width: 90%;margin: 0 auto;">
+											<div class="form-group">
+												<label for="firstname" class="col-sm-2 col-md-4 control-label">买入价</label>
+												<div class="col-sm-10 col-md-8">
+													<input type="text" class="form-control" id="firstname" 
+														   placeholder="">
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="lastname" class="col-sm-2 col-md-4 control-label">购买数量</label>
+												<div class="col-sm-10 col-md-8">
+													<input type="text" class="form-control" id="lastname" 
+														   placeholder="">
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="lastname" class="col-sm-2 col-md-4 control-label">总额</label>
+												<div class="col-sm-10 col-md-8">
+													<input type="text" class="form-control" id="lastname" 
+														   placeholder="">
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="lastname" class="col-sm-2 col-md-4 control-label">交易密码</label>
+												<div class="col-sm-10 col-md-8">
+													<input type="text" class="form-control" id="lastname" 
+														   placeholder="">
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="col-sm-offset-3 col-sm-9">
+													<button type="submit" class="btn btn-default btn2">卖出</button>
+												</div>
+											</div>
+										</form>
+										<p class="p1">收取<span class="span2">0.2</span>元手续费</p>
+										<p class="p1">建议价格<span class="span2">6.30</span>RMB</p>
+										<p class="p1">最多可卖<span class="span2">12332555.22</span>猛犸象牙</p>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 hei2" style="padding-left: 0;padding-right: 0;background: #f5f5f5;height: 100%;">
+									<div class="index33">
+										<div class="index3-top">
+											<div style="border-bottom: 2px solid #f9d423;width: 120px;padding-bottom: 5px;"><img src="images/thead.png" alt=""><span>买卖委托盘</span></div>
+										</div>
+										<table class="table1">
+											<tr>
+												<td>类型</td>
+												<td>价格(￥)</td>
+												<td>数量(B)</td>
+											</tr>
+											<tr>
+												<td class="red">没有找到数据</td>
+												<td></td>
+												<td></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ex2 pp">qq</div>
+					<div class="ex2 pp">ww</div>
+					<div class="ex2 pp">aa</div>
+				</div>
+				<div class="ex1 pp">
+					<div class="count-con">
+						<table class="count-table">
+							<thead>
+								<tr>
+									<th>创建时间</th><th>交易类型</th><th>价格</th><th>数量</th><th>总金额</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								   	<td>猛犸象牙(XY)</td>
+								   	<td class="green">卖</td>
+								    <td>1000.00</td>
+								    <td>9000</td>
+								    <td>56700</td>
+								</tr>
+								<tr>
+								   	<td>琥珀(HP)</td>
+								   	<td class="green">卖</td>
+								    <td>0.00</td>
+								    <td>0</td>
+								    <td>0</td>
+								</tr>
+								<tr>
+								   	<td>蜜蜡(ML)</td>
+								   	<td class="green">卖</td>
+								    <td>0.00</td>
+								    <td>0</td>
+								    <td>0</td>
+								</tr>
+								<tr>
+								   	<td>RMB</td>
+								   	<td class="green">卖</td>
+								    <td>6610.00</td>
+								    <td>11986.78</td>
+								    <td>0</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+		  		</div>
+		  		<div class="ex1 pp">
+		  			<div class="count-con">
+						<table class="count-table">
+							<thead>
+								<tr>
+									<th>创建时间</th><th>交易类型</th><th>价格</th><th>数量</th><th>总金额</th><th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								   	<td>2017-09-05</td>
+								   	<td class="green">卖</td>
+								    <td>1000.00</td>
+								    <td>9000</td>
+								    <td>56700</td>
+								    <td class="blue">取消委托</td>
+								</tr>
+								<tr>
+								   	<td>琥珀(HP)</td>
+								   	<td class="green">卖</td>
+								    <td>0.00</td>
+								    <td>0</td>
+								    <td>0</td>
+								    <td class="blue">取消委托</td>
+								</tr>
+								<tr>
+								   	<td>蜜蜡(ML)</td>
+								   	<td class="green">卖</td>
+								    <td>0.00</td>
+								    <td>0</td>
+								    <td>0</td>
+								    <td class="blue">取消委托</td>
+								</tr>
+								<tr>
+								   	<td>RMB</td>
+								   	<td class="green">卖</td>
+								    <td>6610.00</td>
+								    <td>11986.78</td>
+								    <td>0</td>
+								    <td class="blue">取消委托</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+		  		</div>
+		  		<div class="ex1 pp">
+		  			<div class="count-con">
+						<table class="count-table">
+							<thead>
+								<tr>
+									<th>创建时间</th><th>交易类型</th><th>价格</th><th>数量</th><th>总金额</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								   	<td>猛犸象牙(XY)</td>
+								   	<td class="green">卖</td>
+								    <td>1000.00</td>
+								    <td>9000</td>
+								    <td>56700</td>
+								</tr>
+								<tr>
+								   	<td>琥珀(HP)</td>
+								   	<td class="green">卖</td>
+								    <td>0.00</td>
+								    <td>0</td>
+								    <td>0</td>
+								</tr>
+								<tr>
+								   	<td>蜜蜡(ML)</td>
+								   	<td class="green">卖</td>
+								    <td>0.00</td>
+								    <td>0</td>
+								    <td>0</td>
+								</tr>
+								<tr>
+								   	<td>RMB</td>
+								   	<td class="green">卖</td>
+								    <td>6610.00</td>
+								    <td>11986.78</td>
+								    <td>0</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+		  		</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<footer class="footer">
+	<div class="container footer-top">
+		<div class="row">
+			<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 ">
+				<h4>客户服务</h4>
+				<p><a href="">注册指南</a></p>
+				<p><a href="">充值提现</a></p>
+				<p><a href="">交易指南</a></p>
+				<p><a href="">人才招聘</a></p>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 index1-11">
+				<h4>关于我们</h4>
+				<p><a href="">关于我们</a></p>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+				<h4>服务条款</h4>
+				<p><a href="">法律声明</a></p>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+				<h4><img src="images/gan.png" alt="" class="gan">风险提示</h4>
+				<p>理性投资</p>
+			</div>
+		</div>
+	</div>
+	<p>Copyright 2017 All Rights Reserved 版权所有</p>
+</footer>
+<script type="text/javascript" src='js/jquery-3.2.1.min.js'></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src='js/echarts.js'></script>
+<!-- <script type="text/javascript" src='js/idangerous.swiper.min.js'></script> -->
+<script type="text/javascript">
+	$(function(){
+		$('#mu').click(function(){
+			if($('#titles').is(':hidden')){
+				$('#titles').show();
+			}else{
+				$('#titles').hide();
+			}
+		});
+		$('.hei2').css('height',$('.hei1').height());
+		$('.index33').css('height',$('.hei1').height());
+	})
+</script>
+<script type="text/javascript">
+    function click1(t){
+        var lis=document.getElementById('ul').getElementsByTagName('li');
+        var ps=document.getElementsByClassName('ex1');
+        for(var j=0;j<ps.length;j++){
+            ps[j].style.display='none';
+            lis[j].style.color='#333';
+            lis[j].style.borderBottom='none';
+        }
+        t.style.borderBottom='2px solid #ff8c4e';
+        var s=t.id;
+        s=s.substring(2);
+        ps[s-1].style.display='block';
+    }
+    function click2(t){
+        var lis1=document.getElementById('ul1').getElementsByTagName('li');
+        var ps1=document.getElementsByClassName('ex2');
+        for(var j=0;j<ps1.length;j++){
+            ps1[j].style.display='none';
+            lis1[j].style.color='#333';
+            lis1[j].style.background='#fff';
+        }
+        t.style.background='#f2f2f2';
+        var a=t.id;
+        a=a.substring(3);
+        ps1[a-1].style.display='block';
+    }
+</script>
+<script>
+    myChart=echarts.init(document.getElementById('index2-tu'));//获取容器
+    //先设置完其它的样式，显示一个空的直角坐标轴，然后获取数据后填入数据
+    myChart.setOption({
+	    title : {
+	        text: '',
+	        subtext: ''
+	    },
+	    backgroundColor:'#fff',
+	    tooltip : {
+	        trigger: 'axis'
+	    },
+	    legend: {
+	        data:['最新成交价', '预购队列']
+	    },
+	    toolbox: {
+	        show : true,
+	        feature : {
+	            mark : {show: true},
+	            dataView : {show: true, readOnly: false},
+	            magicType : {show: true, type: ['line', 'bar']},
+	            restore : {show: true},
+	            saveAsImage : {show: true}
+	        }
+	    },
+	    dataZoom : {
+	        show : false,
+	        start : 0,
+	        end : 100
+	    },
+	    xAxis : [
+	        {
+	            type : 'category',
+	            boundaryGap : true,
+	            data : (function (){
+	                var now = new Date();
+	                var res = [];
+	                var len = 10;
+	                while (len--) {
+	                    res.unshift(now.toLocaleTimeString().replace(/^\D*/,''));
+	                    now = new Date(now - 2000);
+	                }
+	                return res;
+	            })()
+	        },
+   			{
+	            type : 'category',
+	            boundaryGap : true,
+	            data : (function (){
+	                var res = [];
+	                var len = 10;
+	                while (len--) {
+	                    res.push(len + 1);
+	                }
+	                return res;
+	            })()
+	        }
+	    ],
+		yAxis : [
+	        {
+	            type : 'value',
+	            scale: true,
+	            name : '价格',
+	            boundaryGap: [0.2, 0.2]
+	        },
+	        {
+	            type : 'value',
+	            scale: true,
+	            name : '预购量',
+	            boundaryGap: [0.2, 0.2]
+	        }
+	    ],
+		series : [
+	        {
+	            name:'预购队列',
+	            type:'bar',
+	            xAxisIndex: 1,
+	            yAxisIndex: 1,
+	            itemStyle:{
+                    normal:{
+                        color:'#1D50A6'
+                    }
+                },
+	            data:(function (){
+	                var res = [];
+	                var len = 10;
+	                while (len--) {
+	                    res.push(Math.round(Math.random() * 1000));
+	                }
+	                return res;
+	            })()
+	        },
+	        {
+	            name:'最新成交价',
+	            type:'line',
+	            data:(function (){
+	                var res = [];
+	                var len = 10;
+	                while (len--) {
+	                    res.push((Math.random()*10 + 5).toFixed(1) - 0);
+	                }
+	                return res;
+	            })()
+	        }
+	    ]
+	});
+	var lastData = 11;
+	var axisData;
+	clearInterval(timeTicket);
+	timeTicket = setInterval(function (){
+	    lastData += Math.random() * ((Math.round(Math.random() * 10) % 2) == 0 ? 1 : -1);
+	    lastData = lastData.toFixed(1) - 0;
+	    axisData = (new Date()).toLocaleTimeString().replace(/^\D*/,'');
+
+    // 动态数据接口 addData
+	    myChart.addData([
+	        [
+	            0,        // 系列索引
+	            Math.round(Math.random() * 1000), // 新增数据
+	            true,     // 新增数据是否从队列头部插入
+	            false     // 是否增加队列长度，false则自定删除原有数据，队头插入删队尾，队尾插入删队头
+	        ],
+	        [
+	            1,        // 系列索引
+	            lastData, // 新增数据
+	            false,    // 新增数据是否从队列头部插入
+	            false,    // 是否增加队列长度，false则自定删除原有数据，队头插入删队尾，队尾插入删队头
+	            axisData  // 坐标轴标签
+	        ]
+	    ]);
+	}, 10000);
+    // 异步加载json格式数据
+    // $.getJSON('http://localhost:63342/echart/loaddata/client.php',function(data){
+    //     myChart.setOption({
+    //         xAxis: {
+    //             data: data.categories
+    //         },
+    //         series: [{
+    //             // 根据名字对应到相应的系列
+    //             name: '销量',
+    //             data: data.data
+    //         }]
+    //     });
+    // });
+</script>
+</body>
+</html>

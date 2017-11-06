@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/show-con.css">
+</head>
+<body>
+<header class="header">
+	<div class="header-top">
+		<div class="container">
+			<span class="header-top1">最新成交价：<b>6.1024</b>小时成交币量：<b>3226727.0924</b>小时成交金额量：<b>5849</b></span>
+			<span><a href="">立即登录</a><a href="">免费注册</a></span>
+		</div>
+	</div>
+	<div class="header-middle">
+		<div class="container fix">
+			<div class="logo-bg">
+				<img src="images/logo.png" alt="" class="logo">
+			</div>
+			<img src="images/mu.png" alt="" id="mu">
+			<ul id="titles">
+				<a href="index.html"><li>首页</li></a>
+				<a href="exchange.html"><li>交易大厅</li></a>
+				<a href="count-1.html"><li>我的账户</li></a>
+				<a href="show.html"><li>网站公告</li></a>
+				<a href="show.html"><li style="border-right: none;">一般问题</li></a>
+			</ul>
+		</div>
+	</div>
+	<div class="header-bottom">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" >
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+			</ol>   
+			<div class="carousel-inner" style="position: relative;">
+				<div class="item active">
+					<img src="images/banner01.png" alt="First slide" >
+				</div>
+				<div class="item"  >
+					<img src="images/banner01.png" alt="Second slide" >
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="show">
+	<div class="container">
+		<div class="tit fix">
+			<h3 class="fl">网站公告的一个标题</h3><span class="fr">2017-09-05</span>
+		</div>
+		<div class="show-con">
+			<p>公告，是指政府、团体对重大事件当众正式公布或者公开宣告，宣布。国务院2012年4月16日发布、2012年7月1日起施行的《党政机关公文处理工作条例》，对公告的使用表述为：“适用于向国内外宣布重要事项或者法定事项”。其中包含两方面的内容：一是向国内外宣布重要事项，公布依据政策、法令采取的重大行动等；二是向国内外宣布法定事项，公布依据法律规定告知国内外的有关重要规定和重大行动等。</p>
+			<p>公告是行政公文的主要文种之一，它和通告都属于发布范围广泛的晓谕性文种。公告是向国内外宣布重要事项或者法定事项时使用的公文。适用于向国内外宣布重要事项或者法定事项。</p>
+        	<p>公告是用于向国内外宣布重要事项或者法定事项的公文。公告主要有两种，一是宣布重要事项，如最近中国将在东海进行地对地导弹发射训练；二是宣布法定事项，如宣布某项法规或规章，宣布国家领导人选举结果。</p>
+			<p>然而，公告在实际使用中，往往偏离了《国家行政机关公文处理办法》中的规定，各机关、单位、团体事无巨细经常使用公告。公告的庄重性特点被忽视，只注意到广泛性和周知性，以致使公告逐渐演变为“公而告之”。</p>
+		</div>
+	</div>
+</div>
+<footer class="footer">
+	<div class="container footer-top">
+		<div class="row">
+			<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 ">
+				<h4>客户服务</h4>
+				<p><a href="">注册指南</a></p>
+				<p><a href="">充值提现</a></p>
+				<p><a href="">交易指南</a></p>
+				<p><a href="">人才招聘</a></p>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 index1-11">
+				<h4>关于我们</h4>
+				<p><a href="">关于我们</a></p>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+				<h4>服务条款</h4>
+				<p><a href="">法律声明</a></p>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+				<h4><img src="images/gan.png" alt="" class="gan">风险提示</h4>
+				<p>理性投资</p>
+			</div>
+		</div>
+	</div>
+	<p>Copyright 2017 All Rights Reserved 版权所有</p>
+</footer>
+<script type="text/javascript" src='js/jquery-3.2.1.min.js'></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#mu').click(function(){
+			if($('#titles').is(':hidden')){
+				$('#titles').show();
+			}else{
+				$('#titles').hide();
+			}
+		})
+	})
+</script>
+</body>
+</html>

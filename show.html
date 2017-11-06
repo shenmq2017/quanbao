@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/show.css">
+</head>
+<body>
+<header class="header">
+	<div class="header-top">
+		<div class="container">
+			<span class="header-top1">最新成交价：<b>6.1024</b>小时成交币量：<b>3226727.0924</b>小时成交金额量：<b>5849</b></span>
+			<span><a href="">立即登录</a><a href="">免费注册</a></span>
+		</div>
+	</div>
+	<div class="header-middle">
+		<div class="container fix">
+			<div class="logo-bg">
+				<img src="images/logo.png" alt="" class="logo">
+			</div>
+			<img src="images/mu.png" alt="" id="mu">
+			<ul id="titles">
+				<a href="index.html"><li>首页</li></a>
+				<a href="exchange.html"><li>交易大厅</li></a>
+				<a href="count-1.html"><li>我的账户</li></a>
+				<a href="show.html"><li>网站公告</li></a>
+				<a href="show.html"><li style="border-right: none;">一般问题</li></a>
+			</ul>
+		</div>
+	</div>
+	<div class="header-bottom">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" >
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+			</ol>   
+			<div class="carousel-inner" style="position: relative;">
+				<div class="item active">
+					<img src="images/banner01.png" alt="First slide" >
+				</div>
+				<div class="item"  >
+					<img src="images/banner01.png" alt="Second slide" >
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="show">
+	<div class="container">
+		<h3>网站公告</h3>
+		<ul>
+			<li class="fix"><a href=""><span class="fl">当你老了，白发苍苍，睡意朦胧</span><span class="fr">2017-09-04</span></a></li>
+			<li class="fix"><a href=""><span class="fl">当你老了，白发苍苍，睡意朦胧</span><span class="fr">2017-09-04</span></a></li>
+			<li class="fix"><a href=""><span class="fl">当你老了，白发苍苍，睡意朦胧</span><span class="fr">2017-09-04</span></a></li>
+			<li class="fix"><a href=""><span class="fl">当你老了，白发苍苍，睡意朦胧</span><span class="fr">2017-09-04</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+<footer class="footer">
+	<div class="container footer-top">
+		<div class="row">
+			<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 ">
+				<h4>客户服务</h4>
+				<p><a href="">注册指南</a></p>
+				<p><a href="">充值提现</a></p>
+				<p><a href="">交易指南</a></p>
+				<p><a href="">人才招聘</a></p>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 index1-11">
+				<h4>关于我们</h4>
+				<p><a href="">关于我们</a></p>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+				<h4>服务条款</h4>
+				<p><a href="">法律声明</a></p>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+				<h4><img src="images/gan.png" alt="" class="gan">风险提示</h4>
+				<p>理性投资</p>
+			</div>
+		</div>
+	</div>
+	<p>Copyright 2017 All Rights Reserved 版权所有</p>
+</footer>
+<script type="text/javascript" src='js/jquery-3.2.1.min.js'></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#mu').click(function(){
+			if($('#titles').is(':hidden')){
+				$('#titles').show();
+			}else{
+				$('#titles').hide();
+			}
+		})
+	})
+</script>
+</body>
+</html>
