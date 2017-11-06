@@ -1,0 +1,23 @@
+.show{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+.show h3{
+	margin-bottom: 30px;
+}
+.fl{
+	float: left;
+	color: #656565;
+	margin-top: 10px;
+}
+.fr{
+	float: right;
+	color: #656565;
+	margin-top: 10px;
+}
+.show-con p{
+	margin-bottom: 20px;
+	text-align: left;
+	text-indent: 2em;
+}	
