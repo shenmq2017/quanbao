@@ -1,0 +1,87 @@
+.count-title{
+	height: 50px;
+	line-height: 50px;
+	background: #333;
+}
+.count-title ul li{
+	width: 12.5%;
+	float: left;
+	text-align: center;
+}
+.count-title ul li a{
+	color: #fff;
+}
+.count-title i{
+	content: '';
+	height: 28px;
+	float: right;
+	margin-top: 14px;
+	border-right: 1px solid #f5a343;
+}
+.count-title ul li:hover{
+	background: #f9d423;
+	color: #333;
+}
+.count-con{
+	margin-top: 30px;
+}
+.con-title{
+	font-size: 15px;
+	font-weight: bold;
+}
+.con-title img{
+	margin-right: 10px;
+}
+.count-table{
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 60px;
+	border: 1px solid #ccc;
+	border-top: 2px solid #f5a343;
+}
+.count-table tr td,.count-table tr th{
+	text-align: center;
+}
+.count-table thead tr{
+	background: #eee;
+}
+.count-table tr{
+	height: 36px;
+	line-height: 36px;
+}
+.count-table tbody tr:nth-child(odd){
+	background: #f9f9f9;
+	border-bottom: 1px solid #ccc;
+	font-size: 12px;
+}
+.count-table tbody tr:nth-child(even){
+	background: #fff;
+	border-bottom: 1px solid #ccc;
+	font-size: 12px;
+}
+.count-table1{
+	margin-bottom: 20px;
+}
+.count-table1 td{
+	font-weight: bold;
+}
+.count-table1 span{
+	margin-right: 30px;
+	cursor: pointer;
+}
+.color{
+	background: #ff8c4e;
+	color: #fff;
+	padding: 5px;
+}
+
+
+@media screen and (max-width: 620px){
+	.count-title{
+		height: 100px;
+		line-height: 50px;
+	}
+	.count-title ul li{
+		width: 25%;
+	}
+}

@@ -1,0 +1,113 @@
+.count-title{
+	height: 50px;
+	line-height: 50px;
+	background: #333;
+}
+.count-title ul li{
+	width: 12.5%;
+	float: left;
+	text-align: center;
+}
+.count-title ul li a{
+	color: #fff;
+}
+.count-title i{
+	content: '';
+	height: 28px;
+	float: right;
+	margin-top: 14px;
+	border-right: 1px solid #f5a343;
+}
+.count-title ul li:hover{
+	background: #f9d423;
+	color: #333;
+}
+.count-con{
+	margin-top: 30px;
+}
+.con-title{
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.con-title img{
+	margin-right: 10px;
+}
+
+
+
+
+
+
+
+.count-table{
+	width: 100%;
+	margin-bottom: 30px;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	border-top: 2px solid #f5a343;
+}
+.count-table tr td,.count-table tr th{
+	text-align: left;
+	padding-left: 20px;
+}
+.count-table thead tr{
+	background: #eee;
+}
+.count-table tr{
+	height: 36px;
+	line-height: 36px;
+}
+.count-table tbody tr:nth-child(odd){
+	background: #f9f9f9;
+	border-bottom: 1px solid #ccc;
+	font-size: 12px;
+}
+.count-table tbody tr:nth-child(even){
+	background: #fff;
+	border-bottom: 1px solid #ccc;
+	font-size: 12px;
+}
+.blue{
+	color: #019ed5;
+	cursor: pointer;
+}
+
+.form-horizontal .control-label{
+	text-align: left;
+}
+.form-horizontal .form-group{
+	margin-left:0;
+	margin-right:0;
+	margin-bottom: 0;
+}
+.form-group:nth-child(odd){
+	background: #f5f5f5;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: left;
+}
+.form-group:nth-child(even){
+	background: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: left;
+}
+.form-group1 input{
+	height: 30px;
+	line-height: 30px;
+	font-size: 13px;
+	padding-left: 5px;
+}
+
+
+
+@media screen and (max-width: 620px){
+	.count-title{
+		height: 100px;
+		line-height: 50px;
+	}
+	.count-title ul li{
+		width: 25%;
+	}
+}
